@@ -11,11 +11,9 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 
-vault_path = "C:/Users/Pame/Documents/All Vaults"
+vault_path = "[INSERT INITIAL PATH HERE]"
 
-#AMPM_path = vault_path + '/' + "AMPM" + '/' + "Drafts"
-#xeres_path = vault_path / "Xeres" / "Drafts"
-#OHB_path = vault_path / "OHB" / "Drafts"
+
 
 """ markdowns= []
 
