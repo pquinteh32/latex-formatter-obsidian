@@ -12,5 +12,4 @@ dist/TextTagger.exe
 dist/*
 build/*
 venv/*
-
-
+.env

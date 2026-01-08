@@ -1,4 +1,7 @@
 import re, base64, sys, os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def resource_path(relative_path):
     """Obtiene la ruta absoluta a un recurso, funciona tanto en desarrollo como empaquetado"""
@@ -11,8 +14,7 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 
-vault_path = "[INSERT INITIAL PATH HERE]"
-
+vault_path = os.getenv("OBSIDIAN_VAULT")
 
 
 """ markdowns= []
