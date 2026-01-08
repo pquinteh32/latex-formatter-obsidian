@@ -5,7 +5,7 @@ a = Analysis(
     ['main.py', 'MDtoLatex.py'],
     pathex=[],
     binaries=[],
-    datas=[('documents.png','.'),('folder.png','.'),('write.png','.'),('write.ico','.')],
+    datas=[('images/','.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -35,5 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['write.ico'],
+    icon=['images/write.ico'],
 )

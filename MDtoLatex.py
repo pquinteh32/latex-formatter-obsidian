@@ -14,10 +14,10 @@ def add_files_in_tree(parent, dirname):
         if (re.search('.obsidian',f)==None):
             fullname = os.path.join(dirname, f)
             if os.path.isdir(fullname):            # if it's a folder, add folder and recurse
-                treedata.Insert(parent, fullname, f, values=[],icon=encoded_image_icon(resource_path('folder.png')))
+                treedata.Insert(parent, fullname, f, values=[],icon=encoded_image_icon(resource_path('images/folder.png')))
                 add_files_in_tree(fullname, fullname)
             else:
-                treedata.Insert(parent, fullname, f, values=[os.stat(fullname).st_size], icon=encoded_image_icon(resource_path('documents.png')))
+                treedata.Insert(parent, fullname, f, values=[os.stat(fullname).st_size], icon=encoded_image_icon(resource_path('images/documents.png')))
 
 add_files_in_tree('',vault_path)
 
@@ -43,7 +43,7 @@ layout = [
 
 ]
 
-window = sg.Window('Latex Tag', layout, finalize=True, size=(400,450), resizable=True, icon=encoded_image_icon(resource_path('write.png')))
+window = sg.Window('Latex Tag', layout, finalize=True, size=(400,450), resizable=True, icon=encoded_image_icon(resource_path('images/write.png')))
 
 
 
